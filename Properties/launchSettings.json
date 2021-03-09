@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JumpStart": {
+      "commandName": "Project",
+      "commandLineArgs": "--config=server.cfg --serverExe=\"samp-server.exe\" --hostname=Test --rconpassword=whatever --maxplayers=123 --port=4321 --weburl=\"www.pacwhite.de\""
+    }
+  }
+}

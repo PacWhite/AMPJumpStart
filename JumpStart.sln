@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpStart", "JumpStart.csproj", "{131A9511-2E1A-40A6-9EA9-0EA66C28EF1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{131A9511-2E1A-40A6-9EA9-0EA66C28EF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{131A9511-2E1A-40A6-9EA9-0EA66C28EF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{131A9511-2E1A-40A6-9EA9-0EA66C28EF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{131A9511-2E1A-40A6-9EA9-0EA66C28EF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {374B5A14-9725-4D31-8DEE-1E63748DBE92}
+	EndGlobalSection
+EndGlobal
