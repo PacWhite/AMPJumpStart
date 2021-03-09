@@ -16,7 +16,7 @@ namespace JumpStart
             
             if (!File.Exists(_template))
             {
-                Console.WriteLine("No Jumpstart Config found - Copy the main config of your app and rename it to config.jump");
+                Console.WriteLine("No Jumpstart Config found - Copy the main config of your app and rename it to config.jump or select via --template=filename.ext");
             }
             else
             {
@@ -43,6 +43,11 @@ namespace JumpStart
                 {
                     ProcessName = splittetArg[1];
                     Console.WriteLine("ProcessName: {0}", splittetArg[1]);
+                }
+                else if(splittetArg[0] == "--template")
+                {
+                    _template = splittetArg[1];
+                    _templateContent = File.ReadAllText(_template);
                 }
                 else if(splittetArg[0] == "--seperator")
                 {
