@@ -17,6 +17,7 @@ namespace JumpStart
             if (!File.Exists(_template))
             {
                 Console.WriteLine("No Jumpstart Config found - Copy the main config of your app and rename it to config.jump or select via --template=filename.ext");
+                Environment.Exit(0);
             }
             else
             {
@@ -73,6 +74,15 @@ namespace JumpStart
             proc.StartInfo.FileName = ProcessName;
             proc.StartInfo.UseShellExecute = false;
             proc.StartInfo.RedirectStandardOutput = true;
+            if(File.Exists("arguments.jump"))
+            {
+                Console.WriteLine("Arguments: {0}", File.ReadAllText("arguments.jump"));
+                proc.StartInfo.Arguments = File.ReadAllText("arguments.jump");
+            }
+            else
+            {
+                Console.WriteLine("Arguments: No argument.jump found.");
+            }
             proc.Start();
             proc.BeginOutputReadLine();
             proc.WaitForExit();
